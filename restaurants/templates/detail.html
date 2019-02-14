@@ -7,7 +7,9 @@
 <br>
 <div class="card">
     {% if restaurant.logo %}
-              <img class="card-img-top" src="{{restaurant.logo.url}}" alt="logo">
+      <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="{{restaurant.logo.url}}" allowfullscreen></iframe>
+      </div>
     {% endif %}
   <h5 class="card-header">Restaurant Info</h5>
   <div class="card-body">
